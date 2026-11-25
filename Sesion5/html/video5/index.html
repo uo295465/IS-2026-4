@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Big Buck Bunny - Todas las fuentes y fallback</title>
+</head>
+<body>
+  <h1>Big Buck Bunny</h1>
+
+  <video width="<ANCHO>" height="<ALTO>" poster="big-buck-bunny-poster.png" controls>
+    <source src="big_buck_bunny.ogv" type="video/ogg; codecs=theora,vorbis">
+    <source src="big_buck_bunny.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2">
+    <source src="big_buck_bunny.webm" type="video/webm; codecs=vp8,vorbis">
+
+    <!-- Fallback alternativo sin Flash: imagen de fotograma enlazada para descarga -->
+    <p>Tu navegador no soporta la reproducción de vídeo HTML5 en ninguno de los formatos indicados. Puedes descargar el vídeo directamente haciendo clic en la imagen:</p>
+    <a href="big_buck_bunny.mp4" download>
+      <img src="big-buck-bunny-poster.png" alt="Fotograma de Big Buck Bunny (descargar vídeo)" width="<ANCHO>" height="<ALTO>">
+    </a>
+  </video>
+</body>
+</html>

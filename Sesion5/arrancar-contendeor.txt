@@ -1,0 +1,8 @@
+docker run --rm -d --name nginx-s5 -p 8081:80 -v "$(pwd)/html:/usr/share/nginx/html:ro" nginx
+
+
+wonza
+docker run -d --rm --name wowza -p 8088:8088 \
+  --entrypoint /sbin/entrypoint.sh \
+  wowzamedia/wowza-streaming-engine-linux:4.8.17
+  
