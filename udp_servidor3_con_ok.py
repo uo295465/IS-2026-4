@@ -19,3 +19,4 @@ while True:
 		print("Informacion cliente -> ", datagrama.decode("utf-8"))
 		#socket.sendto(datagrama, origen)
 		socket.sendto(b"OK", origen)
+#ya esta
